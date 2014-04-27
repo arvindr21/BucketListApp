@@ -1,0 +1,24 @@
+<!-- 
+  Create tabs with an icon and label, using the tabs-positive style. 
+  Each tab's child <ion-nav-view> directive will have its own 
+  navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top">
+
+
+  <!-- Login Tab -->
+  <ion-tab title="Sign In" icon-on="ion-ios7-locked" 
+               icon-off="ion-ios7-locked-outline" href="#/auth/signin">
+    <ion-nav-view name="auth-signin"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Register Tab -->
+  <ion-tab title="Sign Up" icon-on="ion-ios7-personadd" 
+               icon-off="ion-ios7-personadd-outline" href="#/auth/signup">
+    <ion-nav-view name="auth-signup"></ion-nav-view>
+  </ion-tab>
+
+
+
+</ion-tabs>

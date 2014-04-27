@@ -1,0 +1,23 @@
+<!-- 
+  Create tabs with an icon and label, using the tabs-positive style. 
+  Each tab's child <ion-nav-view> directive will have its own 
+  navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top">
+
+
+  <!-- List Tab -->
+  <ion-tab title="My List" icon-on="ion-ios7-browsers" 
+               icon-off="ion-ios7-browsers-outline" href="#/bucket/list">
+    <ion-nav-view name="bucket-list"></ion-nav-view>
+  </ion-tab>
+
+
+  <!-- Completed Tab -->
+  <ion-tab title="Completed" icon-on="ion-ios7-checkmark" 
+               icon-off="ion-ios7-checkmark-outline" href="#/bucket/completed">
+    <ion-nav-view name="bucket-completed"></ion-nav-view>
+  </ion-tab>
+
+  
+</ion-tabs>
