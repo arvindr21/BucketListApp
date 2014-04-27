@@ -1,0 +1,10 @@
+<div class="modal slide-in-up" ng-controller="newCtrl">
+   <header class="bar bar-header bar-secondary">
+      <button class="button button-clear button-primary" ng-click="close()">Cancel</button>
+      <h1 class="title">New Item</h1>
+      <button class="button button-positive" ng-click="createNew()">Done</button>
+   </header>
+   <ion-content class="padding has-header">
+      <input type="text" placeholder="I need to do..." ng-model="data.item">
+   </ion-content>
+</div>
