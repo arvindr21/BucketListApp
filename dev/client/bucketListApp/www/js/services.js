@@ -64,7 +64,7 @@ angular.module('bucketList.services', [])
                 });
             },
             getOne: function (id, email) {
-                return $http.get(base+'/api/v1/bucketList/data/list/' + id, {
+                return $http.get(base+'/api/v1/bucketList/data/item/' + id, {
                     method: 'GET',
                     params: {
                         token: email
