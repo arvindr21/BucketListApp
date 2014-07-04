@@ -2,7 +2,7 @@ var pwdMgr = require('./managePasswords');
 
 module.exports = function (server, db) {
     // unique index
-    db.appUsers.ensureIndex({
+    db.users.ensureIndex({
         email: 1
     }, {
         unique: true
